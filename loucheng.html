@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/louti.css" />
+		<script src="js/jquery-2.1.0.js"></script>
+	</head>
+	<body>
+		
+		<div class="mian-box-louti"></div>
+		<div class="mian-box-louti"></div>
+		<div class="mian-box-louti"></div>
+		<div class="mian-box-louti"></div>
+		<div class="mian-box-louti"></div>
+		<div class="mian-box-louti"></div>
+		<!--楼层效果-->
+		<ul id="lou-cheng">
+			<li class="btn">
+				<span class="first"></span>
+			</li>
+			<li class="btn">
+				<span class="first">
+					
+				</span>
+				
+			</li>
+			<li class="btn">
+				<span class="first">
+					
+				</span>
+				
+			</li>
+			<li class="btn">
+				<span class="first"></span>
+				
+			</li>
+			<li class="btn">
+				<span class="first"></span>
+				
+			</li>
+			<li class="btn">
+				<span class="first"></span>
+			
+			</li>
+		</ul>	
+	</body>
+	
+	<script>
+	$(function(){
+		$(document).scroll(function(){
+		var tops=$(this).scrollTop();
+		if(tops>=200){
+		     $("#lou-cheng").show(700)
+		}else{
+			$("#lou-cheng").hide(700)
+		}
+		$(".mian-box-louti").each(function(i,o){
+			var bTop=$(o).offset().top;
+			var bh=$(o).height();
+			var indexsdf=$(this).index();
+			console.log(tops+"---"+bTop+"---"+bh+"--"+i)
+		if(tops>bTop-1&&tops<bTop+bh){
+			$(".btn>span").removeClass("active").eq(i).addClass("active")
+		}
+			
+			
+	})
+	})
+	$(".btn>span").hover(function(){
+		$(".btn>span").removeClass("hover")
+		$(this).addClass("hover")
+	},function(){
+		$(".btn>span").removeClass("hover")
+	})
+	
+	$(".btn").click(function(){
+		var index=$(this).index();
+		var topss=$(".mian-box-louti").eq(index).offset().top;
+		$("html,body").stop().animate({scrollTop:topss},800)
+	})
+	
+	})
+	
+	</script>
+</html>

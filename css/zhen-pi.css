@@ -1,0 +1,539 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer
+}
+
+html,
+body {
+	height: 100%;
+	background: white;
+}
+
+#mian-1 {
+	width: 1202px;
+	height: 37px;
+	margin: 0 auto;
+	line-height: 37px;
+}
+
+#mian-1>p {
+	font-size: 14px;
+}
+
+#mian-1>p>span:nth-child(1) {
+	color: #ec1e22;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#mian-1>p>span:nth-child(2) {
+	color: #d41c75;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.mian-left-font1 {
+	width: 192px;
+	height: 29px;
+	background: #666666;
+	line-height: 29px;
+	font-size: 12px;
+	color: white;
+}
+/*3级导航*/
+.mian-left-ulbox {
+	width: 191px;
+	min-height:600px;
+	background:burlywood;
+}
+.ul-box-minadd{
+	width:191px;
+	min-height:200px;
+	background: yellow;
+}
+.ul-box-minadd>li{
+	width:191px;
+	min-height:150px;
+	 background: darkcyan;
+}
+.a-mian-ddd{
+	width:191px;
+	height:40px;
+	display: block;
+	background: royalblue;
+	line-height: 40px;	
+}
+.a-mian-ddd>img{
+	float:right;
+	margin-right: 5px;
+	margin-top:20px;
+}
+.oul-li-syy{
+	width:191px;
+	height:100px;
+	overflow-y:scroll;
+	background: darkgoldenrod;
+	
+}
+.oul-li-syy>li{
+	width:158px;
+	height:22px;
+	border:1px solid aquamarine;
+	
+}
+.oul-li-syy>li:hover{
+	background: yellowgreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mian-box {
+	width: 1202px;
+	min-height: 286px;
+	margin: 0 auto;
+}
+
+.mian-left {
+	width: 192px;
+	min-height: 286px;
+	
+	float: left;
+}
+
+.mian-right {
+	width: 996px;
+	height: 100%;
+	background: white;
+	float: right;
+}
+
+.mian-ring-top {
+	width: 996px;
+	height: 29px;
+	background: #ededed;
+	line-height: 29px;
+}
+
+.mian-ring-top>p:nth-child(1) {
+	float: left;
+	font-size: 12px;
+}
+
+.mian-ring-top>p:nth-child(1)>span {
+	font-weight: bold;
+}
+
+.mian-ring-top>p:nth-child(2) {
+	font-size: 12px;
+	float: right;
+	margin-right: 20px;
+}
+
+.mina-right-herder {
+	width: 996px;
+	min-height: 40px;
+	font-size: 12px;
+}
+
+.mina-right-herder>span:nth-child(1) {
+	margin-top: 14px;
+	font-size: 12px;
+	float: left;
+}
+
+.mina-right-herder>a {
+	margin-top: 14px;
+	float: left;
+	margin-left: 14px;
+}
+
+
+.mina-right-herder>a:hover{
+	color:red;
+}
+
+.mina-right-herder>p {
+	color: #666666;
+	margin-top: 14px;
+	float: right;
+	margin-right: 20px;
+}
+
+.mina-right-herder>p>a {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	line-height: 18px;
+	text-align: center;
+	border: 1px solid #dedede;
+	margin-left: 4px;
+	color:#666666;
+}
+
+.mian-img-box {
+	width: 996px;
+	min-height:1894px;
+	font-size: 12px;
+	position: relative;
+	overflow: hidden;
+}
+
+.mian-img-box>.box-ul-oo{
+	margin-top: 20px;
+	width: 996px;
+	min-height:1812px;
+	position: absolute;
+	display: none;
+	
+}
+.mian-img-box>.box-ul-oo:nth-child(1){
+	display:block;
+}
+.mian-img-box>.box-ul-oo>li {
+	width: 246px;
+	height: 312px;
+	float: left;
+	margin-left:2px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.mian-img-box>.box-ul-oo>li:hover {
+	box-shadow: 1px 1px 3px black;
+}
+
+.mian-img-box>.box-ul-oo>li>img {
+	margin-top: 30px;
+}
+
+.mian-li-font1 {
+	height: 59px;
+	margin-top: 4px;
+	text-align: center;
+	width: 239px;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.mian-li-font1>span:nth-child(1) {
+	display: inline-block;
+	font-size: 12px;
+	/*为什么不能隐藏。因为你span设置的高度太高，能够放下，所以隐藏不了*/
+	height: 18px;
+	overflow: hidden;
+	width: 197px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.mian-li-font1>span>a {
+	display: inline-block;
+	font-size: 12px;
+	width: 186px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.mian-li-font1>span:nth-child(2) {
+	display: inline-block;
+	margin-top: 8px;
+	width: 197px;
+	height: 23px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+.mian-li-font1>span:nth-child(2)>s {
+	color: #666666;
+}
+
+.mian-li-font1>a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+.imhsss {
+	position: relative;
+	left: -175px;
+	top: 26px;
+}
+
+.mian-right-yeshu {
+	clear: both;
+}
+
+.mian-buttom {
+	margin-top: 30px;
+	width: 996px;
+	height: 40px;
+	position: relative;
+}
+
+.mian-buttom>ul {
+	float: right;
+	margin-right:50px;
+}
+
+.mian-buttom>ul>li {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background:darkgrey;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	margin-left: 5px;
+	box-sizing: border-box;
+}
+.mian-buttom>ul>li:nth-child(1){
+	background:red;
+}
+.mian-buttom-rightdd{
+	width: 66px;
+	height: 40px;
+	background:darkgrey;
+	position: absolute;
+	right:-20px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	color:white;
+	
+}
+
+.mian-buttom-leftd{
+	width: 66px;
+	height: 40px;
+	background:darkgrey;
+	position: absolute;
+	right:185px;
+	font-size: 14px;
+	color:white;
+	line-height: 40px;
+	text-align: center;
+	display:none;
+	
+}
+.mian-buttom-leftd:hover{
+	background: gray;
+}
+.mian-buttom-rightdd:hover{
+	background: gray;
+}
+
+
+.mian-buttom>ul>li:hover{
+	background: gray;
+}
+
+.lou-right{
+	width:63px;
+	height:268px;
+	position:fixed;
+	right:0;
+	top:200px;
+}
+#list-oo{
+	display:none;
+}
+.list-btn{
+	width:63px;
+	height:66px;
+	background:#d41c50;
+	margin-bottom: 1px;
+	text-align: center;
+	position: relative;
+}
+.list-btn>.list-img-ff{
+	padding-top:13px;
+}
+.list-btn span{
+	font-size:14px;
+	color:white;
+}
+.list-btn>a{
+	font-size:14px;
+	color:white;
+}
+.list-btn-img{
+	position: absolute;
+	display:none;
+}
+.list-btn-img>img{
+	width:63px;
+	height:66px;	
+}
+.list-btn:hover .list-btn-img{
+	display:block;
+	width:63px;
+	height:66px;
+	border:1px solid gainsboro;
+}
+.list-img-erwei{
+	position:absolute;
+	left:-237px;
+	top:-196px;
+}
+dl{
+	width:191px;
+	min-height:600px ;
+	border-right:1px solid #cccccc;
+}
+dt{
+	width:191px;
+	height:40px;
+	line-height: 40px;
+	z-index: 100;
+	font-size:16px;
+	
+	font-weight:500;
+	position: relative;
+	background:white url(../img/gun-buao_03.png) no-repeat;
+	background-position:178px 20px;
+	border-bottom:1px solid #cccccc;
+}
+.ddtt{
+	width:191px;
+	height:40px;
+	line-height: 40px;
+	z-index: 100;
+	position: relative;
+	background:white url(../img/gun-buao_06.png) no-repeat;
+	background-position:178px 20px;
+	
+}
+
+dt:hover{
+	color:red;
+}
+dd>ul{
+	width:191px;
+	height:190px;
+	overflow-y: auto;
+	position: relative;
+	top:-19px;
+	
+	}
+dd>ul>li{
+	width:158px;
+	height:22px;
+	color:#666666;
+	font-size:12px;
+	zoom: 1;
+}
+dd>ul>li:nth-child(1){
+	margin-top:25px;
+}
+dd>ul>li>a{
+	display: block;
+	width:158px;
+	height:22px;
+	color:#666666;
+	font-size:12px;
+	line-height:22px ;
+}
+dd>ul>li:hover{
+	background:#de0a23;
+	
+}
+dd>ul>li>a:hover{
+	color:white;
+}
+
+dl>dd:nth-child(6)>ul{
+	height:100px;
+	}
+dl>dd:nth-child(n+9)>ul{
+	height:160px;
+	
+}
+dl>dd:nth-child(n+10){
+	display: none;
+}
+dl>dd:last-child>ul>li:nth-child(1)>a{
+	width:18px;
+	height:18px;
+	background:yellow ;
+	text-align:top ;
+	margin-left:5px;
+	box-sizing: border-box;
+	
+}
+dl>dd:last-child>ul>li:nth-child(2)>a{
+	width:18px;
+	height:18px;
+	background:deeppink;
+	text-align:top;
+	margin-left:5px;
+	box-sizing: border-box;
+}
+dl>dd:last-child>ul>li:nth-child(3)>a{
+	width:18px;
+	height:18px;
+	background:green;
+	text-align:top ;
+	margin-left:5px;
+	box-sizing: border-box;
+	
+}
+dl>dd:last-child>ul>li:nth-child(4)>a{
+	width:18px;
+	height:18px;
+	background:orchid;
+	text-align:top;
+	margin-left:5px;
+	box-sizing: border-box;
+}
+dl>dd:last-child>ul>li:nth-child(5)>a{
+	width:18px;
+	height:18px;
+	background:blue;
+	text-align:top;
+	margin-left:5px;
+	box-sizing: border-box;
+}
+dl>dd:last-child>ul>li:nth-child(6)>a{
+	width:18px;
+	height:18px;
+	background:brown;
+	text-align:top;
+	margin-left:5px;
+	box-sizing: border-box;
+}
+

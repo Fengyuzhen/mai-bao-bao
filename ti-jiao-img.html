@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.text{
+				width:200px;
+				height:40px;
+				margin-top:20px;
+				margin-left:10px;
+			}
+			.butimg{
+				margin-top:30px;
+				margin-left:30px;
+				width:40px;
+				height:40px;
+				background:red;
+			}
+		</style>
+		
+	</head>
+	<body>
+		商品名称:<input type="text" value="" id="name" class="text"/></br>
+		商品属性:<input type="text" value="" id="shuxing" class="text"/></br>
+		商品价格:<input type="text" value="" id="money" class="text"/></br>
+		商品图片信息:<input type="text" value="" id="imgd" class="text"/></br>
+		商品信息:<input type="text" value="" id="username" class="text"/></br>
+		商品销量:<input type="text" value="" id="num" class="text"/></br>
+		<input type="button" value="按钮" id="btn" class="butimg"/></br>	
+	</body>
+
+	<script>
+		var name1=document.getElementById("name");
+		var shuxing1=document.getElementById("shuxing");
+		var money1=document.getElementById("money");
+		var imgur1=document.getElementById("imgd");
+		var username1=document.getElementById("username");
+		var num1=document.getElementById("num");
+		var btn=document.getElementById("btn");
+		
+		
+		btn.onclick=function(){
+			var name=name1.value;
+			var shuxing=shuxing1.value;
+			var money=money1.value;
+			var imgurl=imgur1.value;
+			var username=username1.value;
+			var num=num1.value;
+			$.ajax({	
+				type:"post",
+				url:"php/03tianjia.php",
+				dataType:'json',
+				data:{
+					name:name,
+					shuxing:shuxing,
+					money:300,
+					imgurl:imgurl.files[0],
+					username:username,
+					num:30,	
+				},
+				async:true, //同步还是异步
+			success:function(data){
+				console.log(data);
+
+			
+		}
+			
+		});
+		}
+		
+	</script>
+</html>

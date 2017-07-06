@@ -1,0 +1,78 @@
+*{
+	margin:0;
+	border:0;
+	padding:0;
+}
+ul,li{
+	list-style: none;
+}
+
+.mian-box-louti{
+	width:100%;
+	height:600px;
+	background: burlywood;
+	margin-bottom: 4px;
+}
+
+#lou-cheng{
+	position: fixed;
+	width: 45px;
+	background: white;
+	left: 8%;
+	top: 200px;
+}
+
+#lou-cheng li{
+	width: 45px;
+	height: 32px;
+	text-align: center;
+	float:left;
+	overflow: hidden;
+	
+	
+}
+
+.btn:nth-child(1) .first:nth-child(1) {
+	display:block;
+	width:45px;
+	height:32px;
+	background:url(../img/home_spirit.png) no-repeat -6px -60px ;
+}
+
+.btn:nth-child(2) .first:nth-child(1) {
+	display:block;
+	width:45px;
+	height:32px;
+	background:url(../img/home_spirit.png) no-repeat -6px -89px;
+}
+.btn:nth-child(3) .first:nth-child(1) {
+	display:block;
+	width:45px;
+	height:32px;
+	background:url(../img/home_spirit.png) no-repeat -6px -121px;
+	
+}
+.btn:nth-child(4) .first:nth-child(1) {
+	display:block;
+	width:45px;
+	height:32px;
+	background:url(../img/home_spirit.png) no-repeat -6px -153px;
+}
+.btn:nth-child(5) .first:nth-child(1) {
+	display:block;
+	width:45px;
+	height:32px;
+	background:url(../img/home_spirit.png) no-repeat -6px -185px;	
+}
+.btn:nth-child(6) .first:nth-child(1) {
+	display:block;
+	width:45px;
+	height:32px;
+	background:url(../img/home_spirit.png) no-repeat -6px -217px ;
+}
+#lou-cheng>.btn>.hover{
+	background-position-x:-170px ;
+}
+#lou-cheng>.btn>.active{
+	background-position-x:-84px ;
+}

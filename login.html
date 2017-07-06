@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input class="ipt1" type="text" placeholder="请输入帐号" value="" />
+		<span class="sp1"></span>
+		<br />
+		<input class="ipt2" type="password" placeholder="请输入密码" value="" />
+		<span class="sp2"></span>
+		<br />
+		<input class="ipt3" type="checkbox" value="" />
+		<span>记住我</span>
+		<br />
+		<input class="btn" type="button" value="点击登录" />
+	</body>
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		var ipt1 = document.querySelector(".ipt1");
+		var sp1 = document.querySelector(".sp1");
+		var ipt2 = document.querySelector(".ipt2");
+		var sp2 = document.querySelector(".sp2");
+		var ipt3 = document.querySelector(".ipt3");
+		var btn = document.querySelector(".btn");
+		
+		ipt1.onchange = function() {
+			var user = ipt1.value;
+			$.ajax({
+				type:"post",
+				url:"login0.php",
+				dataType:"json",
+				data:{
+					user:user
+				},
+				async:true,
+				success:function(data){
+					if(data.status==2){
+						sp1.innerText = data.info;
+						sp1.style.color = "red";
+					}else {
+						sp1.innerText = data.info;
+						sp1.style.color = "green";
+					}
+				}
+			});
+		}
+		
+		btn.onclick = function(){
+			var user = ipt1.value;
+			var pswd = ipt2.value;
+			var is_checked = ipt3.checked;
+			$.ajax({
+				type:"post",
+				url:"login1.php",
+				dataType:"json",
+				data:{
+					user:user,
+					pswd:pswd,
+					is_checked:is_checked
+				},
+				async:true,
+				success:function(data){
+					if(data.status==1){
+						location.href = "login.html";
+					}
+				}
+			});
+		}
+		
+		
+	</script>
+</html>

@@ -1,0 +1,190 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+html,body{
+	width:100%;
+	height:100%;
+	background:white;
+}
+ul,li{
+	list-style:none;
+}
+.mian-denglv{
+	width:100%;
+	height:87px;
+	border-bottom:3px solid #ed1c24 ;
+}
+.miande-top{
+	width:862px;
+	height:87px;
+	
+	margin:0 auto;
+}
+.miande-top img{
+	float:left;
+	padding-top:24px;
+}
+.miande-top>a{
+	float:right;
+	padding-top:57px;
+	color:#666666;
+	font-size:12px;
+	text-decoration: none;
+}
+.mian-deinput{
+	width:862px;
+	min-height:396px;
+	margin:0 auto;
+	
+}
+
+
+.mian-img{
+	margin-top:59px;
+	height:337px;
+	width:496px;	
+	float:left;
+	overflow: hidden;
+}
+.mian-img img{
+	width:100%;
+	height:100%;
+}
+.mian-de-left{
+	margin-top:59px;
+	width:366px;
+	height:337px;
+	background:#f5f5f5;
+	border:1px solid #e1e1e1;
+	float:right;
+	box-sizing: border-box;
+}
+
+.de-font1{
+	
+	height:57px;
+	width:366px;
+	line-height: 57px;
+	
+}
+.de-font1 strong{
+	font-size:16px;
+	font-family: "微软雅黑";
+	margin-left:28px;
+	
+}
+.de-font1 span{
+	font-size:14px;
+	color:#666666;
+	padding-left:45px;
+}
+.de-font1>a{
+	text-decoration: none;
+	font-size:14px;
+	color:#ff0000;
+}
+
+.de-font1>a:hover{
+	
+	text-decoration: underline;
+}
+.de-input{
+	height:208px;
+	
+}
+.de-input span{
+	font-size:14px;
+	 color:#666666;
+}
+.s-pager1{
+	margin-top:59px;
+	margin-left:43px;
+}
+.inp-name{
+	
+	margin-top:54px;
+	width:172px;
+	height:28px;
+	border:1px solid #e1e1e1;
+	outline-color: red;
+	margin-left:14px;
+	
+}
+.s-pager2{
+	margin-left:28px;
+}
+.put-mipu{
+	margin-top:15px;
+	margin-left:9px;
+	width:172px;
+	height:28px;
+	border:1px solid #e1e1e1;
+	outline-color: red;
+}
+.s-pager3{
+	margin-left:3px;
+	font-size:12px;
+}
+
+.inpu-ti{
+	width:96px;
+	height:30px;
+	margin-left:98px;
+	margin-top:15px;
+	outline: none;
+	background:url(../img/deng_07.png)no-repeat;
+}
+
+
+.xi-xia{
+	width:307px;
+	height:1px;
+	margin-left:30px;
+	border-top:1px dotted #e1e1e1;
+}
+.de-imgtu{
+	height:70px;
+	
+	color:#666666;
+}
+.de-imgtu>p{
+	color:#666666;
+	font-size:14px;
+	margin-bottom: 15px;
+	padding-left:17px;
+}
+.de-imgtu>img{
+	padding-left:5px;
+}
+.imgss{
+	margin-left:17px;
+}
+.de-imgtu>a{
+	padding-left:2px;
+	color:#666666;
+	font-size:12px;
+	text-decoration: none;
+}
+.de-imgtu>a:hover{
+	text-decoration: underline;
+}
+.de-imgtu>span{
+	padding-left:2px;
+}
+.floot{
+	width:862px;
+	height:127px;
+	background: white;
+	
+	margin:0 auto;
+	line-height:127px;
+	text-align:center;
+}
+.floot>p{
+	color:#666666;
+	font-size:12px;
+	
+	
+}

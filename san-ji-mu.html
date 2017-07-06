@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+.article_left {
+  width: 288px;
+  height: 100%;
+  float: left;
+}
+
+/*.article_left2:nth-child(2) {
+  margin-top: 16px;
+}
+*/
+/*.article_left1 {
+  height: 60px;
+  width: 222px;
+  /*float: left;*/
+ /* text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 18px;
+  background: #688cc5;
+}*/
+
+/*.article_left2 {
+  width: 133px;
+  height: 29px;
+  background: #688cc5;
+  text-align: center;
+  line-height: 29px;
+  color: white;
+  border-radius: 3px;
+  float: left;
+  clear: both;
+  margin-top: 1px;
+  margin-left: 25px;
+}*/
+
+.one{
+  float:left;
+  margin-left: 25px;
+  color:white;
+}
+
+.one>li>.caidan{
+  display: block;
+  width: 133px;
+  height: 30px;
+  line-height: 30px;
+  background: #688cc5;
+  margin-top:8px;
+  border-radius:4px;
+  text-align: center;
+}
+
+.tow>li>.caidan{
+  display:block;
+  width:111px;
+  height:30px;
+  line-height: 30px;
+  background: #898989;
+  margin-top:2px;
+  margin-left:22px;
+  border-radius:4px;
+  text-align: center;
+}
+
+.three li{
+   padding:5px 0;
+   margin-left: 48px;
+   text-indent:20px;
+   color:black;
+  /* background:url(../images/head/jiantou.jpg) no-repeat 0 5px;*/
+}
+.three li:hover{
+  color:#cc5418;
+}
+.tow,.three{
+  display:none;
+}
+		</style>
+		<script src="js/jquery-2.1.0.js"></script>
+	</head>
+	<body>
+  <div class="article_left">
+      <div class="article_left1">
+        汽车发动机构造与拆装
+      </div>
+      <ul class="one">
+        <li>
+          <a class="caidan">课程简介</a>
+          <ul class="tow">
+            <li>
+              <a class="caidan">课程描述</a>
+              <ul class="three">
+                <li>汽车发动机</li>
+              </ul>
+            </li>
+            <!--结束-->
+            <li>
+              <a class="caidan">课程教材</a>
+              <ul class="three">
+                <li>汽车发动机...</li>
+                <li>汽车拆装...</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        </ul>
+       </div>
+      
+	</body>
+	<script>
+		 $('.caidan').click(function() {
+    $(this).next().slideToggle();
+  })
+
+	</script>
+</html>
